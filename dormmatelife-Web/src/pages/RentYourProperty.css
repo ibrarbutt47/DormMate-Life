@@ -1,0 +1,414 @@
+/* .rent-form-container {
+  padding: 50px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.rent-form {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rent-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #01aaff;
+}
+
+.rent-form input,
+.rent-form select,
+.rent-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.rent-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #01aaff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.rent-form button:hover {
+  background-color: #0098dd;
+}
+
+.map-modal {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.map-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.map-buttons button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.map-buttons button:hover {
+  background-color: #ccc;
+}
+
+.map-locate-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  border: 2px solid #666;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.map-locate-button:hover {
+  background: #eee;
+}
+
+.phone-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.phone-input-container .phone-prefix {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.phone-input-container input[type="tel"] {
+  flex: 1;
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+
+.error {
+  background-color: #ffe6e6;
+  color: #d8000c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  color: #01aaff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.rent-form button,
+.map-buttons button,
+.map-locate-button {
+  background-color: #01aaff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rent-form button:hover,
+.map-buttons button:hover,
+.map-locate-button:hover {
+  background-color: #008cd1;
+  transform: translateY(-2px);
+}
+
+.rent-form button:active,
+.map-buttons button:active,
+.map-locate-button:active {
+  background-color: #007bb3;
+  transform: scale(0.97);
+}
+
+.map-locate-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map-locate-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  padding: 6px 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #01aaff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  z-index: 1000;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.location-autocomplete-container {
+  position: relative;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 999;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-dropdown li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f0f0f0;
+} */
+
+
+
+
+
+
+
+
+
+
+/* RentYourProperty.css */
+
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.rent-form-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rent-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.rent-form input,
+.rent-form select,
+.rent-form textarea,
+.rent-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.rent-form textarea {
+  resize: vertical;
+}
+
+.rent-form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+.rent-form button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.rent-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.loading {
+  color: #17a2b8;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.suggestions-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.suggestions-dropdown li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.location-autocomplete-container {
+  position: relative;
+}
+
+.map-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.map-buttons button {
+  flex: 1;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.map-buttons button:hover {
+  background-color: #5a6268;
+}
+
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.phone-input-container .phone-prefix {
+  padding: 0.75rem;
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.map-locate-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.upload-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .rent-form-container {
+    padding: 0.75rem;
+  }
+
+  .rent-form input,
+  .rent-form select,
+  .rent-form textarea,
+  .rent-form button {
+    font-size: 0.95rem;
+  }
+
+  .map-buttons {
+    flex-direction: column;
+  }
+
+  .phone-input-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .map-locate-button {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+}

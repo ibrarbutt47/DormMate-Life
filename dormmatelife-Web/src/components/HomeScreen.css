@@ -1,0 +1,258 @@
+/* Main container */
+.room-list-container {
+  padding: 40px;
+  background: #fefefe;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Filter bar styles */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f0f2f5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  justify-content: center;
+}
+
+/* Filter inputs & select */
+.filter-bar input,
+.filter-bar select {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-width: 220px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+  border-color: #4b9cff;
+  outline: none;
+}
+
+/* Filter labels */
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.filter-item label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Filter action buttons wrapper */
+.filter-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.details-btn,
+.filter-btn,
+.reset-btn,
+.nearby-btn {
+  padding: 12px 22px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Individual button colors */
+.details-btn {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.details-btn:hover {
+  background: linear-gradient(135deg, #1c2b6c, #1d4690);
+}
+
+.filter-btn {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+.filter-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+.reset-btn {
+  background: linear-gradient(135deg, #e53935, #d32f2f);
+}
+.reset-btn:hover {
+  background: linear-gradient(135deg, #d32f2f, #c62828);
+}
+
+.nearby-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+.nearby-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+}
+
+/* Room card container */
+.properties-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Room card */
+.room-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  align-items: flex-start;
+  min-height: 300px;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+.room-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Room image */
+.room-image {
+  width: 240px;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Room details */
+.room-details {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+}
+
+.room-details h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.room-details p {
+  font-size: 15px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.tags {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Card button area */
+.card-btn {
+  margin-top: 12px;
+}
+.card-btn button {
+  margin-right: 10px;
+}
+
+/* Suggestions dropdown */
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+.suggestions-list li {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.suggestions-list li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Rating section */
+.room-rating {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+.stars {
+  font-size: 1.1rem;
+  color: #FFD700;
+  letter-spacing: 2px;
+  user-select: none;
+}
+.no-rating {
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .room-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-image {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .room-details {
+    width: 100%;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
+
+/* Booked status */
+.room-card.booked {
+  opacity: 0.7;
+  border: 2px solid red;
+}
+.status-booked {
+  color: red;
+  font-weight: bold;
+}

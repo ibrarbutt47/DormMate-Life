@@ -1,0 +1,110 @@
+.my-properties-container {
+    padding: 32px;
+    max-width: 1400px; /* Increased max-width further for wider cards */
+    margin: 0 auto;
+  }
+  
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #333;
+  }
+  
+  .centered-message {
+    text-align: center;
+    padding: 32px;
+    font-size: 16px;
+  }
+  
+  .centered-message.error {
+    color: red;
+  }
+  
+  .properties-grid {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+    /* align-items: center; */
+
+  }
+  
+  .property-card {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 650px; /* Increased the width of the cards */
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .property-details {
+    padding: 20px;
+  }
+  
+  .property-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  
+  .property-location {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .property-description {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  
+  .property-rent {
+    font-weight: bold;
+    font-size: 17px;
+    color: #0077cc;
+  }
+  
+  /* Responsive - 1 column on small screens */
+  @media (max-width: 768px) {
+    .properties-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .action-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.orders-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.orders-button:hover {
+  background-color: #005fa3;
+}

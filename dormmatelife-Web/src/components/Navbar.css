@@ -1,0 +1,298 @@
+/* .navbar {
+  background-color: #01aaff; 
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-center li a:hover {
+  color: #e5f9ff;
+  border-bottom: 2px solid #e5f9ff;
+  padding-bottom: 2px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-user {
+  font-weight: 500;
+  color: white;
+}
+
+.logout-button,
+.login-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.logout-button:hover,
+.login-button:hover {
+  background-color: white;
+  color: #01aaff;
+} */
+
+
+
+
+
+
+
+
+
+
+/* 
+.navbar {
+  background-color: #01aaff;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-center li a:hover {
+  color: #e5f9ff;
+  border-bottom: 2px solid #e5f9ff;
+  padding-bottom: 2px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-button,
+.login-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.logout-button:hover,
+.login-button:hover {
+  background-color: white;
+  color: #01aaff;
+}
+
+@media (max-width: 950px) {
+  .navbar-center {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #01aaff;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .navbar-center.active {
+    display: flex;
+  }
+
+  .navbar-menu-icon {
+    display: block;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb); /* gradient purple/blue */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Right Side Links and Buttons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Find & List Property Links */
+.nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #ffe6ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Login / Logout Button Styles */
+.login-button,
+.logout-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: white;
+  color: #4e54c8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .login-button,
+  .logout-button {
+    width: 100%;
+    text-align: center;
+  }
+}

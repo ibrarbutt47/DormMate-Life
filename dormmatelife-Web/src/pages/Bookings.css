@@ -1,0 +1,86 @@
+/* OwnerOrders.css */
+
+.owner-orders-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owner-orders-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .orders-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .confirm-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #218838;
+  }
+  
+  .status-confirmed {
+    color: #28a745;
+    font-weight: 500;
+  }
+  .rating-star {
+  color: #fbc02d;
+  font-size: 1rem;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 4px;
+}
+
+.no-rating,
+.no-review {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
